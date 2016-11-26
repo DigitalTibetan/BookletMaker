@@ -146,7 +146,7 @@
 				LastUpgradeCheck = 0810;
 				TargetAttributes = {
 					4920C67D14ECF76E0032E2AB = {
-						DevelopmentTeam = UK52VPD7F9;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -299,11 +299,11 @@
 		4920C6B114ECF76E0032E2AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = UK52VPD7F9;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrintString/Booklet-maker-Prefix.pch";
 				INFOPLIST_FILE = "PrintString/Booklet-maker-Info.plist";
@@ -318,10 +318,10 @@
 		4920C6B214ECF76E0032E2AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = UK52VPD7F9;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrintString/Booklet-maker-Prefix.pch";
 				INFOPLIST_FILE = "PrintString/Booklet-maker-Info.plist";
