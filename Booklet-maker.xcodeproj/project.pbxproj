@@ -348,7 +348,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Booklet Maker";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
-				MARKETING_VERSION = 0.3;
+				MARKETING_VERSION = 0.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dosc.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Booklet-maker";
 				PROVISIONING_PROFILE = "";
@@ -375,7 +375,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Booklet Maker";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
-				MARKETING_VERSION = 0.3;
+				MARKETING_VERSION = 0.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dosc.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Booklet-maker";
 				PROVISIONING_PROFILE = "";
