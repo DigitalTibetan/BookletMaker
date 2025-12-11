@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		4920C69914ECF76E0032E2AB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4920C69714ECF76E0032E2AB /* MainMenu.xib */; };
 		4920C6B814ED0EE20032E2AB /* document.m in Sources */ = {isa = PBXBuildFile; fileRef = 4920C6B714ED0EE20032E2AB /* document.m */; };
 		4920C6C114EE57AF0032E2AB /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4920C6C014EE57AF0032E2AB /* Quartz.framework */; };
+		4994D7292EEAE77300001D29 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4994D7282EEAE77300001D29 /* UniformTypeIdentifiers.framework */; };
+		4994D72C2EEAE98900001D29 /* PDFViewSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 4994D72B2EEAE98900001D29 /* PDFViewSub.m */; };
 		49D9CBD714F7841D009E10D6 /* Booklet-maker.icns in Resources */ = {isa = PBXBuildFile; fileRef = 49D9CBD614F7841C009E10D6 /* Booklet-maker.icns */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,9 @@
 		4920C6B614ED0EE20032E2AB /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = document.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		4920C6B714ED0EE20032E2AB /* document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = document.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4920C6C014EE57AF0032E2AB /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		4994D7282EEAE77300001D29 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		4994D72A2EEAE98300001D29 /* PDFViewSub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFViewSub.h; sourceTree = "<group>"; };
+		4994D72B2EEAE98900001D29 /* PDFViewSub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFViewSub.m; sourceTree = "<group>"; };
 		49D9CBD614F7841C009E10D6 /* Booklet-maker.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Booklet-maker.icns"; path = "../Booklet-maker.icns"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4994D7292EEAE77300001D29 /* UniformTypeIdentifiers.framework in Frameworks */,
 				4920C6C114EE57AF0032E2AB /* Quartz.framework in Frameworks */,
 				4920C68314ECF76E0032E2AB /* Cocoa.framework in Frameworks */,
 			);
@@ -72,6 +78,7 @@
 		4920C68114ECF76E0032E2AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4994D7282EEAE77300001D29 /* UniformTypeIdentifiers.framework */,
 				4920C6C014EE57AF0032E2AB /* Quartz.framework */,
 				4920C68214ECF76E0032E2AB /* Cocoa.framework */,
 				4920C6A014ECF76E0032E2AB /* SenTestingKit.framework */,
@@ -99,6 +106,8 @@
 				4920C68914ECF76E0032E2AB /* Supporting Files */,
 				4920C6B614ED0EE20032E2AB /* document.h */,
 				4920C6B714ED0EE20032E2AB /* document.m */,
+				4994D72A2EEAE98300001D29 /* PDFViewSub.h */,
+				4994D72B2EEAE98900001D29 /* PDFViewSub.m */,
 			);
 			name = "Booklet-maker";
 			path = PrintString;
@@ -143,7 +152,8 @@
 		4920C67514ECF76D0032E2AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					4920C67D14ECF76E0032E2AB = {
 						DevelopmentTeam = UK52VPD7F9;
@@ -152,12 +162,12 @@
 				};
 			};
 			buildConfigurationList = 4920C67814ECF76D0032E2AB /* Build configuration list for PBXProject "Booklet-maker" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 4920C67314ECF76D0032E2AB;
 			productRefGroup = 4920C67F14ECF76E0032E2AB /* Products */;
@@ -190,6 +200,7 @@
 			files = (
 				4920C68F14ECF76E0032E2AB /* main.m in Sources */,
 				4920C69614ECF76E0032E2AB /* PSAppDelegate.m in Sources */,
+				4994D72C2EEAE98900001D29 /* PDFViewSub.m in Sources */,
 				4920C6B814ED0EE20032E2AB /* document.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,19 +239,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = UK52VPD7F9;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -262,6 +286,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Debug;
 		};
@@ -269,19 +294,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = UK52VPD7F9;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -295,6 +333,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Release;
 		};
@@ -305,11 +344,12 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = UK52VPD7F9;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrintString/Booklet-maker-Prefix.pch";
 				INFOPLIST_FILE = "PrintString/Booklet-maker-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dosc.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Booklet-maker";
 				PROVISIONING_PROFILE = "";
@@ -325,11 +365,12 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = UK52VPD7F9;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrintString/Booklet-maker-Prefix.pch";
 				INFOPLIST_FILE = "PrintString/Booklet-maker-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dosc.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Booklet-maker";
 				PROVISIONING_PROFILE = "";

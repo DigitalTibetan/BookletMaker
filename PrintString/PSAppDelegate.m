@@ -42,7 +42,17 @@
     [self.MyPDFView registerForDraggedTypes:
      [NSArray arrayWithObjects:NSFilenamesPboardType,nil]];
 */
-    [self.MyPDFView setAllowsDragging:TRUE];
+    // Replace deprecated setAllowsDragging: with registering acceptable pasteboard types.
+    if (self.MyPDFView) {
+        if (@available(macOS 10.13, *)) {
+            [self.MyPDFView registerForDraggedTypes:@[ NSPasteboardTypeFileURL ]];
+        } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            [self.MyPDFView registerForDraggedTypes:@[ NSFilenamesPboardType ]];
+#pragma clang diagnostic pop
+        }
+    }
 //    [self.MyPDFView setDelegate:PDFvs];
     [self.MyPDFThumbs setPDFView:self.MyPDFView];
 }
@@ -334,8 +344,9 @@
     [self.sortPages setStringValue:tout];
     
     NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
-    [pasteBoard declareTypes:[NSArray arrayWithObjects:NSStringPboardType, nil] owner:nil];
-    [pasteBoard setString: tout forType:NSStringPboardType];
+    // Modern API: clear contents and set string with NSPasteboardTypeString
+    [pasteBoard clearContents];
+    [pasteBoard setString:tout forType:NSPasteboardTypeString];
     
     NSLog(@"opages=%d pages=%d",opages,pages);
     PDFDocument *dc;
@@ -457,7 +468,7 @@
     [op setAllowedFileTypes:fta];
     [op setAllowsOtherFileTypes:NO];
     [op setAllowsMultipleSelection:NO];
-    if ([op runModal] == NSOKButton)
+    if ([op runModal] == NSModalResponseOK)
     {
         NSURL *nu =  [op URL];   //[op filename]; // XXX
         PDFDocument *pdfDoc = [[PDFDocument alloc] initWithURL:nu];
@@ -479,9 +490,10 @@
     NSArray *fta=[NSArray arrayWithObjects:@"pdf", nil];
     [sp setAllowedFileTypes:fta];
     [sp setAllowsOtherFileTypes:NO];
-    if ([sp runModal]==NSOKButton)
+    if ([sp runModal]==NSModalResponseOK)
     {
         [[self.MyPDFView document] writeToURL:[sp URL]];
     }
 }
 @end
+
