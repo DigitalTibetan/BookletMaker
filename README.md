@@ -2,6 +2,14 @@ BookletMaker allows to transform PDF books or pechas into booklet-formats suitab
 
 ![Booklet-Maker UI](https://github.com/DigitalTibetan/BookletMaker/blob/main/Doc/BookletMaker.jpg?raw=true)
 
+### Resulting PDFs
+
+Print-ready examples:
+
+| 3 pechas per page | A5 booklet | A6 booklet |
+| - | - | - |
+| ![3 pecha pages](https://github.com/DigitalTibetan/BookletMaker/blob/main/Doc/pecha_3.jpg?raw=true) | ![booklet a5](https://github.com/DigitalTibetan/BookletMaker/blob/main/Doc/booklet_a5.jpg?raw=true) | ![booklet a6](https://github.com/DigitalTibetan/BookletMaker/blob/main/Doc/booklet_a6.jpg?raw=true) |
+
 ## Installation and Build
 
 Either clone the source code and use Xcode to build the application, or use the provided ready-to-run application.
