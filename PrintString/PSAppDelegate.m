@@ -463,12 +463,14 @@
 }
 
 - (IBAction)mFileOpen:(id)sender {
+    NSLog(@"File open click");
     NSOpenPanel *op = [NSOpenPanel openPanel];
-    NSArray *fta=[NSArray arrayWithObjects:@"pdf", nil];
-//    [op setAllowedFileTypes:fta];
+    NSArray<UTType *> *fta=[NSArray<UTType *> arrayWithObjects:UTTypePDF, nil];
+    // UTType *fta=[UTType arrayWithObjects:@"pdf", nil];
     [op setAllowedContentTypes:fta];
     [op setAllowsOtherFileTypes:NO];
     [op setAllowsMultipleSelection:NO];
+
     if ([op runModal] == NSModalResponseOK)
     {
         NSURL *nu =  [op URL];   //[op filename]; // XXX
@@ -488,7 +490,7 @@
 
 - (IBAction)mSave:(id)sender {
     NSSavePanel *sp=[NSSavePanel savePanel];
-    NSArray *fta=[NSArray arrayWithObjects:@"pdf", nil];
+    NSArray<UTType *> *fta=[NSArray<UTType *> arrayWithObjects:UTTypePDF, nil];
     //[sp setAllowedFileTypes:fta];
     [sp setAllowedContentTypes:fta];
     [sp setAllowsOtherFileTypes:NO];

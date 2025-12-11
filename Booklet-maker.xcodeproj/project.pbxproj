@@ -104,7 +104,6 @@
 				4920C69514ECF76E0032E2AB /* PSAppDelegate.m */,
 				4920C69714ECF76E0032E2AB /* MainMenu.xib */,
 				4920C68914ECF76E0032E2AB /* Supporting Files */,
-				4920C6B614ED0EE20032E2AB /* document.h */,
 				4920C6B714ED0EE20032E2AB /* document.m */,
 				4994D72A2EEAE98300001D29 /* PDFViewSub.h */,
 				4994D72B2EEAE98900001D29 /* PDFViewSub.m */,
@@ -116,6 +115,7 @@
 		4920C68914ECF76E0032E2AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4920C6B614ED0EE20032E2AB /* document.h */,
 				4920C68A14ECF76E0032E2AB /* Booklet-maker-Info.plist */,
 				49D9CBD614F7841C009E10D6 /* Booklet-maker.icns */,
 				4920C68B14ECF76E0032E2AB /* InfoPlist.strings */,

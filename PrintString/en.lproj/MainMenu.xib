@@ -153,7 +153,7 @@
             <point key="canvasLocation" x="140" y="154"/>
         </menu>
         <window title="Booklet-maker" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" />
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="642" height="654"/>
             <rect key="screenRect" x="0.0" y="0.0" width="3440" height="1409"/>
@@ -306,18 +306,6 @@
                     <constraint firstItem="610" firstAttribute="bottom" secondItem="583" secondAttribute="bottom" id="zyq-M8-MUG"/>
                 </constraints>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="621B2818-591E-4DDC-A99A-45D24E8AB645" autosavesConfiguration="NO" allowsUserCustomization="NO" showsBaselineSeparator="NO" displayMode="iconAndLabel" sizeMode="regular" id="604">
-                <allowedToolbarItems>
-                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="609">
-                        <connections>
-                            <action selector="mFilePrint:" target="494" id="616"/>
-                        </connections>
-                    </toolbarItem>
-                </allowedToolbarItems>
-                <defaultToolbarItems>
-                    <toolbarItem reference="609"/>
-                </defaultToolbarItems>
-            </toolbar>
             <point key="canvasLocation" x="140" y="-289"/>
         </window>
         <customObject id="494" customClass="PSAppDelegate">
