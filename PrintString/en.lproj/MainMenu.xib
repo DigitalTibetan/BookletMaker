@@ -153,7 +153,7 @@
             <point key="canvasLocation" x="140" y="154"/>
         </menu>
         <window title="Booklet-maker" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" />
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="642" height="654"/>
             <rect key="screenRect" x="0.0" y="0.0" width="3440" height="1409"/>
@@ -214,7 +214,7 @@
                             <action selector="clickMatrix:" target="494" id="562"/>
                         </connections>
                     </matrix>
-                    <textField identifier="sortPages" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="551">
+                    <textField identifier="sortPages" focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="551">
                         <rect key="frame" x="7" y="412" width="105" height="28"/>
                         <textFieldCell key="cell" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="552">
                             <font key="font" metaFont="smallSystem"/>
@@ -266,7 +266,7 @@
                         </constraints>
                         <size key="thumbnailSize" width="64" height="64"/>
                     </pdfThumbnailView>
-                    <textField identifier="layerCount" toolTip="Number of leaves per grouped layer ('signature')." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s7P-e1-vjC">
+                    <textField identifier="layerCount" toolTip="Number of leaves per grouped layer ('signature')." focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s7P-e1-vjC">
                         <rect key="frame" x="156" y="464" width="66" height="22"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="6hy-JI-vzM"/>
@@ -308,28 +308,13 @@
             </view>
             <toolbar key="toolbar" implicitIdentifier="621B2818-591E-4DDC-A99A-45D24E8AB645" autosavesConfiguration="NO" allowsUserCustomization="NO" showsBaselineSeparator="NO" displayMode="iconAndLabel" sizeMode="regular" id="604">
                 <allowedToolbarItems>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="606"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="607"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="609">
                         <connections>
                             <action selector="mFilePrint:" target="494" id="616"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="605"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="608"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarCustomizeToolbarItem" id="613"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarSeparatorItem" id="614"/>
-                    <toolbarItem implicitItemIdentifier="F9142AA6-EE1A-4760-8801-0F96C1CA8543" label="Drag PDF documents here:" paletteLabel="Drag PDF documents here:" tag="-1" id="615">
-                        <size key="minSize" width="32" height="32"/>
-                        <size key="maxSize" width="32" height="32"/>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="40FCF3C0-5B2D-4C46-9C87-B324970184BE" label="Toolbar Item" paletteLabel="Toolbar Item" tag="-1" id="617">
-                        <size key="minSize" width="32" height="32"/>
-                        <size key="maxSize" width="32" height="32"/>
-                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
-                    <toolbarItem reference="615"/>
                     <toolbarItem reference="609"/>
                 </defaultToolbarItems>
             </toolbar>
