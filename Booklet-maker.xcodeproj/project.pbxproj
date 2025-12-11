@@ -146,7 +146,8 @@
 				LastUpgradeCheck = 0810;
 				TargetAttributes = {
 					4920C67D14ECF76E0032E2AB = {
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = UK52VPD7F9;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -155,6 +156,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 4920C67314ECF76D0032E2AB;
@@ -299,11 +301,11 @@
 		4920C6B114ECF76E0032E2AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = UK52VPD7F9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrintString/Booklet-maker-Prefix.pch";
 				INFOPLIST_FILE = "PrintString/Booklet-maker-Info.plist";
@@ -311,6 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dosc.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Booklet-maker";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -318,10 +321,11 @@
 		4920C6B214ECF76E0032E2AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = UK52VPD7F9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrintString/Booklet-maker-Prefix.pch";
 				INFOPLIST_FILE = "PrintString/Booklet-maker-Info.plist";
@@ -329,6 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dosc.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Booklet-maker";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
