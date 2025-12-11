@@ -4,7 +4,7 @@ BookletMaker allows to transform PDF books or pechas into booklet-formats suitab
 
 ## Installation and Build
 
-Either clone the source code and use Xcode to build the application. Note that you will need to provide signing information within Xcode.
+Either clone the source code and use Xcode to build the application, or use the provided ready-to-run application.
 
 ### Install release version
 
