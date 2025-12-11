@@ -16,6 +16,7 @@
 		4920C6B814ED0EE20032E2AB /* document.m in Sources */ = {isa = PBXBuildFile; fileRef = 4920C6B714ED0EE20032E2AB /* document.m */; };
 		4920C6C114EE57AF0032E2AB /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4920C6C014EE57AF0032E2AB /* Quartz.framework */; };
 		4994D7292EEAE77300001D29 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4994D7282EEAE77300001D29 /* UniformTypeIdentifiers.framework */; };
+		4994D72C2EEAE98900001D29 /* PDFViewSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 4994D72B2EEAE98900001D29 /* PDFViewSub.m */; };
 		49D9CBD714F7841D009E10D6 /* Booklet-maker.icns in Resources */ = {isa = PBXBuildFile; fileRef = 49D9CBD614F7841C009E10D6 /* Booklet-maker.icns */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		4920C6B714ED0EE20032E2AB /* document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = document.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4920C6C014EE57AF0032E2AB /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		4994D7282EEAE77300001D29 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		4994D72A2EEAE98300001D29 /* PDFViewSub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFViewSub.h; sourceTree = "<group>"; };
+		4994D72B2EEAE98900001D29 /* PDFViewSub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFViewSub.m; sourceTree = "<group>"; };
 		49D9CBD614F7841C009E10D6 /* Booklet-maker.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Booklet-maker.icns"; path = "../Booklet-maker.icns"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +106,8 @@
 				4920C68914ECF76E0032E2AB /* Supporting Files */,
 				4920C6B614ED0EE20032E2AB /* document.h */,
 				4920C6B714ED0EE20032E2AB /* document.m */,
+				4994D72A2EEAE98300001D29 /* PDFViewSub.h */,
+				4994D72B2EEAE98900001D29 /* PDFViewSub.m */,
 			);
 			name = "Booklet-maker";
 			path = PrintString;
@@ -195,6 +200,7 @@
 			files = (
 				4920C68F14ECF76E0032E2AB /* main.m in Sources */,
 				4920C69614ECF76E0032E2AB /* PSAppDelegate.m in Sources */,
+				4994D72C2EEAE98900001D29 /* PDFViewSub.m in Sources */,
 				4920C6B814ED0EE20032E2AB /* document.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
