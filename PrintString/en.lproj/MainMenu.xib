@@ -214,7 +214,7 @@
                             <action selector="clickMatrix:" target="494" id="562"/>
                         </connections>
                     </matrix>
-                    <textField identifier="sortPages" focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="551">
+                    <textField identifier="sortPages" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="551">
                         <rect key="frame" x="7" y="412" width="105" height="28"/>
                         <textFieldCell key="cell" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="552">
                             <font key="font" metaFont="smallSystem"/>
@@ -222,7 +222,7 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="553">
+                    <button horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="553">
                         <rect key="frame" x="7" y="379" width="105" height="32"/>
                         <buttonCell key="cell" type="push" title="Transform" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="554">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -241,7 +241,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <constraints>
-                            <constraint firstAttribute="width" constant="93" id="L6P-dd-cv7"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="93" id="L6P-dd-cv7"/>
                             <constraint firstAttribute="height" constant="32" id="Zmu-LF-T04"/>
                         </constraints>
                         <connections>
@@ -266,7 +266,7 @@
                         </constraints>
                         <size key="thumbnailSize" width="64" height="64"/>
                     </pdfThumbnailView>
-                    <textField identifier="layerCount" toolTip="Number of leaves per grouped layer ('signature')." focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s7P-e1-vjC">
+                    <textField identifier="layerCount" toolTip="Number of leaves per grouped layer ('signature')." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s7P-e1-vjC">
                         <rect key="frame" x="156" y="464" width="66" height="22"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="6hy-JI-vzM"/>
@@ -306,7 +306,7 @@
                     <constraint firstItem="610" firstAttribute="bottom" secondItem="583" secondAttribute="bottom" id="zyq-M8-MUG"/>
                 </constraints>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="621B2818-591E-4DDC-A99A-45D24E8AB645" autosavesConfiguration="NO" showsBaselineSeparator="NO" displayMode="iconAndLabel" sizeMode="regular" id="604">
+            <toolbar key="toolbar" implicitIdentifier="621B2818-591E-4DDC-A99A-45D24E8AB645" autosavesConfiguration="NO" allowsUserCustomization="NO" showsBaselineSeparator="NO" displayMode="iconAndLabel" sizeMode="regular" id="604">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="606"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="607"/>
@@ -329,15 +329,7 @@
                     </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
-                    <toolbarItem reference="605"/>
-                    <toolbarItem reference="605"/>
-                    <toolbarItem reference="605"/>
-                    <toolbarItem reference="605"/>
-                    <toolbarItem reference="605"/>
-                    <toolbarItem reference="605"/>
-                    <toolbarItem reference="605"/>
                     <toolbarItem reference="615"/>
-                    <toolbarItem reference="608"/>
                     <toolbarItem reference="609"/>
                 </defaultToolbarItems>
             </toolbar>
