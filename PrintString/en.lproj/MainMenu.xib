@@ -316,8 +316,6 @@
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
-        <customObject id="420" customClass="NSFontManager"/>
-        <customObject id="566" customClass="TextDelegate"/>
         <userDefaultsController representsSharedInstance="YES" id="573"/>
     </objects>
 </document>

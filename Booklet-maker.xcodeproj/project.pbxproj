@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		4920C69914ECF76E0032E2AB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4920C69714ECF76E0032E2AB /* MainMenu.xib */; };
 		4920C6B814ED0EE20032E2AB /* document.m in Sources */ = {isa = PBXBuildFile; fileRef = 4920C6B714ED0EE20032E2AB /* document.m */; };
 		4920C6C114EE57AF0032E2AB /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4920C6C014EE57AF0032E2AB /* Quartz.framework */; };
+		4994D7292EEAE77300001D29 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4994D7282EEAE77300001D29 /* UniformTypeIdentifiers.framework */; };
 		49D9CBD714F7841D009E10D6 /* Booklet-maker.icns in Resources */ = {isa = PBXBuildFile; fileRef = 49D9CBD614F7841C009E10D6 /* Booklet-maker.icns */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		4920C6B614ED0EE20032E2AB /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = document.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		4920C6B714ED0EE20032E2AB /* document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = document.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4920C6C014EE57AF0032E2AB /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		4994D7282EEAE77300001D29 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		49D9CBD614F7841C009E10D6 /* Booklet-maker.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Booklet-maker.icns"; path = "../Booklet-maker.icns"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4994D7292EEAE77300001D29 /* UniformTypeIdentifiers.framework in Frameworks */,
 				4920C6C114EE57AF0032E2AB /* Quartz.framework in Frameworks */,
 				4920C68314ECF76E0032E2AB /* Cocoa.framework in Frameworks */,
 			);
@@ -72,6 +75,7 @@
 		4920C68114ECF76E0032E2AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4994D7282EEAE77300001D29 /* UniformTypeIdentifiers.framework */,
 				4920C6C014EE57AF0032E2AB /* Quartz.framework */,
 				4920C68214ECF76E0032E2AB /* Cocoa.framework */,
 				4920C6A014ECF76E0032E2AB /* SenTestingKit.framework */,
@@ -152,7 +156,7 @@
 				};
 			};
 			buildConfigurationList = 4920C67814ECF76D0032E2AB /* Build configuration list for PBXProject "Booklet-maker" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -309,7 +313,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrintString/Booklet-maker-Prefix.pch";
 				INFOPLIST_FILE = "PrintString/Booklet-maker-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dosc.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Booklet-maker";
 				PROVISIONING_PROFILE = "";
@@ -329,7 +333,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrintString/Booklet-maker-Prefix.pch";
 				INFOPLIST_FILE = "PrintString/Booklet-maker-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dosc.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Booklet-maker";
 				PROVISIONING_PROFILE = "";
