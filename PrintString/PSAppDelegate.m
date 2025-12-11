@@ -465,7 +465,8 @@
 - (IBAction)mFileOpen:(id)sender {
     NSOpenPanel *op = [NSOpenPanel openPanel];
     NSArray *fta=[NSArray arrayWithObjects:@"pdf", nil];
-    [op setAllowedFileTypes:fta];
+//    [op setAllowedFileTypes:fta];
+    [op setAllowedContentTypes:fta];
     [op setAllowsOtherFileTypes:NO];
     [op setAllowsMultipleSelection:NO];
     if ([op runModal] == NSModalResponseOK)
@@ -488,7 +489,8 @@
 - (IBAction)mSave:(id)sender {
     NSSavePanel *sp=[NSSavePanel savePanel];
     NSArray *fta=[NSArray arrayWithObjects:@"pdf", nil];
-    [sp setAllowedFileTypes:fta];
+    //[sp setAllowedFileTypes:fta];
+    [sp setAllowedContentTypes:fta];
     [sp setAllowsOtherFileTypes:NO];
     if ([sp runModal]==NSModalResponseOK)
     {
