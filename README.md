@@ -17,4 +17,9 @@ The 'Releases' area (on the right) includes the latest pre-compiled version of B
 - In macOS "System Settings", go to "Privacy and Security", scroll all the way down, until you see an option to "Start anyway".
 - After yet another suggestion to move the application to trash, or start, it should finally work.
 
+
+| First Warning | System Settings, Security | Second Warning |
+| - | - | - |
+| ![Warning 1](https://github.com/DigitalTibetan/BookletMaker/blob/main/Doc/apple_trash_1.jpg?raw=true) | ![settings](https://github.com/DigitalTibetan/BookletMaker/blob/main/Doc/apple_anyway.jpg?raw=true) | ![Warning 2](https://github.com/DigitalTibetan/BookletMaker/blob/main/Doc/apple_trash_2.jpg?raw=true) |
+
 Remember, the full source code is available in this repository, and you can always build the entire application yourself and provide your own signing keys.
