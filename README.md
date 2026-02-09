@@ -16,9 +16,9 @@ Either clone the source code and use Xcode to build the application, or use the 
 
 ### Install release version
 
-The 'Releases' area (on the right) includes the latest pre-compiled version of BookletMaker for macOS versions 10.13 and newer, latest tested version is macOS Tahoe 26.1.
+The 'Releases' area (on the right) includes the latest pre-compiled version of BookletMaker for macOS versions 10.13 and newer, latest tested version is macOS Tahoe 26.2.
 
-- Download [Booklet-maker.zip](https://github.com/DigitalTibetan/BookletMaker/releases/download/0.3.1/Booklet-maker.zip). (Currently 0.3.1, check release section on the right, if newer versions are available)
+- Download [Booklet-maker.zip](https://github.com/DigitalTibetan/BookletMaker/releases/download/0.4/Booklet-maker-0.4.0.zip). (Currently 0.4, check release section on the right, if newer versions are available)
 - Unpack the archive and try to start Booklet-maker.app.
 - Since the application is not signed, you will get the options to trash the application, or press 'Done'. Press Done.
 - Now to allow the start of the app:
@@ -31,3 +31,7 @@ The 'Releases' area (on the right) includes the latest pre-compiled version of B
 | ![Warning 1](https://github.com/DigitalTibetan/BookletMaker/blob/main/Doc/apple_trash_1.jpg?raw=true) | ![settings](https://github.com/DigitalTibetan/BookletMaker/blob/main/Doc/apple_anyway.jpg?raw=true) | ![Warning 2](https://github.com/DigitalTibetan/BookletMaker/blob/main/Doc/apple_trash_2.jpg?raw=true) |
 
 Remember, the full source code is available in this repository, and you can always build the entire application yourself and provide your own signing keys.
+
+## History
+
+- 2026-02-09: Update 0.4.0 fixes resolution degradation on transforms. (Tx. P.F.)
