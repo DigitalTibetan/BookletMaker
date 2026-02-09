@@ -390,8 +390,7 @@
         NSUInteger iu=i;
         j=[[li objectAtIndex:iu] intValue]-1;
         pt=[dc pageAtIndex:j];
-        NSImage *ni=[[NSImage alloc] initWithData:[pt dataRepresentation]];
-        pi=[[PDFPage alloc] initWithImage:ni];
+        pi=[pt copy];
         [pdfDS insertPage:pi atIndex:i];
         NSLog(@"Page %d from org added to new page %d",j,i);
     }
