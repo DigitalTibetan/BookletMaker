@@ -18,7 +18,7 @@ Either clone the source code and use Xcode to build the application, or use the 
 
 The 'Releases' area (on the right) includes the latest pre-compiled version of BookletMaker for macOS versions 10.13 and newer, latest tested version is macOS Tahoe 26.2.
 
-- Download [Booklet-maker.zip](https://github.com/DigitalTibetan/BookletMaker/releases/download/0.4/Booklet-maker-0.4.0.zip). (Currently 0.4, check release section on the right, if newer versions are available)
+- Download [Booklet-maker.zip](https://github.com/DigitalTibetan/BookletMaker/releases/download/0.4/Booklet-maker.0.4.0.zip). (Currently 0.4, check release section on the right, if newer versions are available)
 - Unpack the archive and try to start Booklet-maker.app.
 - Since the application is not signed, you will get the options to trash the application, or press 'Done'. Press Done.
 - Now to allow the start of the app:
